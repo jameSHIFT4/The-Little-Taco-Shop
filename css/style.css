@@ -1,0 +1,83 @@
+html {
+  font-size: 22px;
+}
+
+body {
+  background-color: #333;
+  color: whitesmoke;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+}
+
+a {
+  color: aliceblue;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+a:hover,
+a:active {
+  color: #eee;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+table {
+  border: 1px solid whitesmoke;
+  border-top: 0;
+}
+
+th,
+td,
+caption {
+  text-align: center;
+  border: 1px solid whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+  border-collapse: separate;
+  padding: 0.5rem;
+}
+
+caption {
+  border-bottom: 0;
+}
+
+/* CSS for jameSHIFT4 to jame$ transition */
+
+.dollar {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.shift4,
+.dollar {
+  transition: opacity 0.75s ease;
+}
+
+.dollar,
+.jame:hover .shift4 {
+  opacity: 0;
+}
+
+.shift4,
+.jame:hover .dollar {
+  opacity: 1;
+}
+
+/* gold for fun :) */
+.jame:active .dollar {
+  color: gold;
+}
+
+.jame a {
+  color: whitesmoke;
+  text-decoration: none;
+}
