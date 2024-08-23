@@ -52,36 +52,3 @@ caption {
 footer {
   font-size: 18px;
 }
-
-/* CSS for jameSHIFT4 to jame$ transition */
-
-.dollar {
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
-.shift4,
-.dollar {
-  transition: opacity 0.75s ease;
-}
-
-.dollar,
-.jame:hover .shift4 {
-  opacity: 0;
-}
-
-.shift4,
-.jame:hover .dollar {
-  opacity: 1;
-}
-
-/* gold for fun :) */
-.jame:active .dollar {
-  color: gold;
-}
-
-.jame a {
-  color: whitesmoke;
-  text-decoration: none;
-}
