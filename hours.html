@@ -2,63 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="James Hift IV" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="jameSHIFT4" />
     <meta name="description" content="Store Hours for The Little Taco Shop" />
     <title>LTS Hours</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/jameSHIFT4.css" />
+    <script src="js/main.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <h1>Little Taco Shop Hours</h1>
-      <nav aria-label="primary-navigation">
-        <ul>
+    <header class="header">
+      <h1 class="header__h1">Little Taco Shop</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
           <li>
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="index.html#about">About LTS</a>
+            <a href="index.html#menu">Menu</a>
           </li>
           <li>
-            <a href="index.html#menu">Our Menu</a>
+            <a href="contact.html">Contact</a>
           </li>
           <li>
-            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About</a>
           </li>
         </ul>
       </nav>
-      <figure>
-        <img src="img/tacos_tray_400x267.png" alt="A Tray of Tasty Tacos" title="We love trays of tacos!" width="400" height="267" />
-        <figcaption>A Tray of Tasty Tacos</figcaption>
-      </figure>
     </header>
 
-    <hr />
+    <section class="hero">
+      <figure>
+        <img src="img/tacos_tray_1000x667.png" alt="A Tray of Tasty Tacos" title="We love trays of tacos!" width="1000" height="667" class="hero__img" />
+        <figcaption class="offscreen">A Tray of Tasty Tacos</figcaption>
+      </figure>
+    </section>
 
-    <main>
-      <article id="hours">
+    <main class="main">
+      <article class="main__article hours">
+        <h2 class="hours__h2">Store Hours</h2>
         <p>We are open 7 days a week!</p>
-        <dl>
+        <dl class="hours__dl">
           <dt>Sunday-Thursday</dt>
-          <dd><time datetime="11:00">11am</time>-<time datetime="21:00">9pm</time></dd>
+          <dd>11am-9pm</dd>
           <dt>Friday-Saturday</dt>
-          <dd><time datetime="11:00">11am</time>-<time datetime="23:00">11pm</time></dd>
+          <dd>11am-11pm</dd>
         </dl>
-        <p><a href="#">Back to Top</a></p>
       </article>
     </main>
 
-    <hr />
-
-    <footer>
+    <footer class="footer">
       <p>
-        &copy;
-        <span class="jame"
-          ><a href="https://github.com/jameSHIFT4/The-Little-Taco-Shop">jame<span class="dollar">$</span></a
-          ><span class="shift4">SHIFT4</span></span
-        >
+        <span class="nowrap">Copyright &copy;</span>
+        <span class="nowrap">The Little Taco Shop <time id="year"></time></span>
       </p>
     </footer>
   </body>
